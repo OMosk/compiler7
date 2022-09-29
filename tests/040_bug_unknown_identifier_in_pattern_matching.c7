@@ -1,0 +1,3 @@
+func main(f: f64) -> void {
+  s = totally_unknown(f)
+}

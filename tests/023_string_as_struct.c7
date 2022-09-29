@@ -1,0 +1,7 @@
+func print(s: string) -> i64 {
+  #syscall(1, 1, s.data, s.len)
+}
+
+func main() {
+  print("Hello world")
+}

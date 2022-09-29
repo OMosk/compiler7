@@ -1,0 +1,9 @@
+struct my_string {
+  data: rawptr
+  len: i64
+}
+
+func main() {
+  %my_string{data, len} = "Hello world"
+  len
+}

@@ -1,0 +1,11 @@
+func sum_of_arithmetic_progression(start, end, step: i64) -> i64 {
+  if start < end {
+    start + sum_of_arithmetic_progression(start + step, end, step);
+  } else {
+    0
+  }
+}
+
+func main() {
+  sum_of_arithmetic_progression(1, 1000000, 1)
+}

@@ -1,0 +1,4 @@
+func main() {
+  s = "This is complex type, use .data"
+  #syscall(1, 1, s, s.len)
+}

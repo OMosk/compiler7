@@ -1,0 +1,17 @@
+#load "helpers.c7"
+
+struct Complex {
+  s: string
+  counter: i64
+}
+
+func main() {
+  my_struct = %Complex{s = "Hello world"} 
+  my_struct = %{my_struct | counter = my_struct.counter + 1}
+  my_struct = %{my_struct | s = "Another"}
+  println_integer(my_struct.counter)
+  print_string(my_struct.s)
+  print_string("\n")
+  println_integer(my_struct.s.len)
+  0
+}

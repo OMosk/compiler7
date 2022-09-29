@@ -1,0 +1,20 @@
+#load "helpers.c7"
+
+func a3() -> void {
+  backtrace = c7_backtrace_string()
+  print_string(backtrace);
+  // print_string("\n");
+}
+
+func a2() -> void {
+  a3();
+}
+
+func a1() -> void {
+  a2();
+}
+
+func main() {
+  a1()
+  0
+}

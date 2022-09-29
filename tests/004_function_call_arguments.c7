@@ -1,0 +1,7 @@
+func main() {
+  f(2, 3)
+}
+
+func f(a: i64, b: i64) {
+  a + b
+}

@@ -1,0 +1,13 @@
+#load "helpers.c7"
+
+func main() {
+  println_float(+5.0)
+  println_float(-6.0)
+
+  println_integer(+7)
+  println_integer(-8)
+
+  println_bool(!true)
+  println_bool(!false)
+  0
+}

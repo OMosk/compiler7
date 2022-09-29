@@ -1,0 +1,8 @@
+func head(list: [$T]) -> T {
+  [first] = list
+  first
+}
+
+func main() {
+  head([4, 5])
+}

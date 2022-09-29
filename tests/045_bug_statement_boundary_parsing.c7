@@ -1,0 +1,6 @@
+#load "helpers.c7"
+
+func main() {
+  a = 123;
+  0
+}

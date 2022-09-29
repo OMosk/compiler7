@@ -1,0 +1,10 @@
+#load "helpers.c7"
+
+func get_number() -> i64 {
+  5
+}
+
+func main() {
+  my_tuple = {get_number(): string}
+  my_tuple[0]
+}

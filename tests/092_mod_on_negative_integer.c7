@@ -1,0 +1,6 @@
+#load "helpers.c7"
+
+func main() {
+  print_string("-10 % 100 == ")
+  println_integer(-10 % 100)
+}

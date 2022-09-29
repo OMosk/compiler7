@@ -1,0 +1,13 @@
+#load "helpers.c7"
+
+func main() {
+  list = [1,2,3]
+  [first|list] = list
+  [second|list] = list
+  [third] = list
+
+  println_integer(first)
+  println_integer(second)
+  println_integer(third)
+  0
+}

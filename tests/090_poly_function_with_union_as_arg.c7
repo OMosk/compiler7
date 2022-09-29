@@ -1,0 +1,14 @@
+#load "helpers.c7"
+
+func do_if_not_nil(x: :nil|$T) -> void {
+  case x {
+    :nil -> print_string(":nil\n")
+    T    -> print_string("Eh?\n")
+  }
+}
+
+func main() {
+  do_if_not_nil(:nil.(:nil|i64))
+  do_if_not_nil(123.(:nil|i64))
+  0
+}

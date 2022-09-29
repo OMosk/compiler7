@@ -1,0 +1,6 @@
+#load "helpers.c7"
+
+func main() {
+  println_float(3.1415926)
+  0
+}

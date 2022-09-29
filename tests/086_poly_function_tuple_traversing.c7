@@ -1,0 +1,12 @@
+#load "helpers.c7"
+
+func get_first(x: {$T, string}) -> T {
+  x[0]
+}
+
+func main() {
+  tuple = {8.0, true}
+  result = get_first(tuple)
+  println_float(result)
+  0
+}

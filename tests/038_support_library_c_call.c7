@@ -1,0 +1,10 @@
+#load "helpers.c7"
+
+func sum_i64(a, b: i64) -> i64 #c_call #support_library
+func sum_f64(a, b: f64) -> f64 #c_call #support_library
+
+func main() {
+  println_integer(sum_i64(1, 2))
+  println_float(sum_f64(3.0, 5.0))
+  0
+}

@@ -1,0 +1,9 @@
+func main() {
+  a = 1
+  point1 = a
+
+  a = 2
+  point2 = a
+
+  point1 + point2
+}

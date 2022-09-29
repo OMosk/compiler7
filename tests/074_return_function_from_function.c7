@@ -1,0 +1,10 @@
+func get_function() {
+  func() {
+    124
+  }
+}
+
+func main() {
+  fn = get_function()
+  fn()
+}

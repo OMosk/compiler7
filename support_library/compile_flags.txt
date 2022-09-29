@@ -1,0 +1,4 @@
+-xc
+-Wall
+-Wextra
+-Werror

@@ -1,0 +1,5 @@
+func main() {
+  print_via_data_len("Hello world".data, 11)
+}
+
+#load "second.c7"

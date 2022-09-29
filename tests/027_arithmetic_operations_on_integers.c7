@@ -1,0 +1,63 @@
+#load "helpers.c7"
+
+func main() {
+  print_string("1 + 2 = "); println_integer(1 + 2)  // 3
+  print_string("2 - 1 = "); println_integer(2 - 1)  // 1
+  print_string("1 - 2 = "); println_integer(1 - 2)  // -1
+  print_string("3 * 4 = "); println_integer(3 * 4)  // 12
+  print_string("10 / 3 = "); println_integer(10 / 3) // 3
+  print_string("10 % 3 = "); println_integer(10 % 3) // 1
+  print_string("1 | 2 = "); println_integer(1 | 2)  // 3
+  print_string("6 & 2 = "); println_integer(6 & 2)  // 2
+  print_string("5 ^ 6 = "); println_integer(5 ^ 6)  // 3
+
+  // print_string("0 || 0 = "); println_integer(0 || 0) // 0
+  // print_string("0 || 1 = "); println_integer(0 || 1) // 1
+  // print_string("0 || 2 = "); println_integer(0 || 2) // 1
+  // print_string("3 || 2 = "); println_integer(3 || 2) // 1
+  // print_string("3 || 0 = "); println_integer(3 || 0) // 1
+
+  // print_string("0 && 0 = "); println_integer(0 && 0) // 0
+  // print_string("0 && 1 = "); println_integer(0 && 1) // 0
+  // print_string("0 && 2 = "); println_integer(0 && 2) // 0
+  // print_string("3 && 2 = "); println_integer(3 && 2) // 1
+  // print_string("3 && 0 = "); println_integer(3 && 0) // 0
+
+  print_string("0 == 0 = "); println_integer((0 == 0).(i64)) // 1
+  print_string("0 == 1 = "); println_integer((0 == 1).(i64)) // 0
+
+  print_string("0 != 0 = "); println_integer((0 != 0).(i64)) // 0
+  print_string("0 != 1 = "); println_integer((0 != 1).(i64)) // 1
+
+  print_string("1 < 0 = "); println_integer((1 < 0).(i64)) // 0
+  print_string("1 < 1 = "); println_integer((1 < 1).(i64)) // 0
+  print_string("1 < 2 = "); println_integer((1 < 2).(i64)) // 1
+
+  print_string("1 <= 0 = "); println_integer((1 <= 0).(i64)) // 0
+  print_string("1 <= 1 = "); println_integer((1 <= 1).(i64)) // 1
+  print_string("1 <= 2 = "); println_integer((1 <= 2).(i64)) // 1
+
+  print_string("1 > 0 = "); println_integer((1 > 0).(i64)) // 1
+  print_string("1 > 1 = "); println_integer((1 > 1).(i64)) // 0
+  print_string("1 > 2 = "); println_integer((1 > 2).(i64)) // 0
+
+  print_string("1 >= 0 = "); println_integer((1 >= 0).(i64)) // 1
+  print_string("1 >= 1 = "); println_integer((1 >= 1).(i64)) // 1
+  print_string("1 >= 2 = "); println_integer((1 >= 2).(i64)) // 0
+
+  print_string("1 << 0 = "); println_integer(1 << 0) // 1
+  print_string("1 << 1 = "); println_integer(1 << 1) // 2
+  print_string("1 << 2 = "); println_integer(1 << 2) // 4
+  print_string("-1 << 0 = "); println_integer(-1 << 0) // 1
+  print_string("-1 << 1 = "); println_integer(-1 << 1) // 2
+  print_string("-1 << 2 = "); println_integer(-1 << 2) // 4
+
+
+  print_string("1 >> 0 = "); println_integer(1 >> 0) // 1
+  print_string("2 >> 1 = "); println_integer(2 >> 1) // 1
+  print_string("4 >> 2 = "); println_integer(4 >> 2) // 1
+  print_string("-1 >> 0 = "); println_integer(-1 >> 0) // 1
+  print_string("-2 >> 1 = "); println_integer(-2 >> 1) // 1
+  print_string("-4 >> 2 = "); println_integer(-4 >> 2) // 1
+  0
+}

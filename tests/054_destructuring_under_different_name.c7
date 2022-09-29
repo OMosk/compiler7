@@ -1,0 +1,4 @@
+func main() {
+  %string{len: i64 = string_len} = "Hello world"
+  string_len
+}

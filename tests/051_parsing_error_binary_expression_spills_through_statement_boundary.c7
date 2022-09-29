@@ -1,0 +1,5 @@
+func main() {
+  somevar = 100
+  %{data, len} = "Hello world"
+  len
+}

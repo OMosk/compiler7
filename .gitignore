@@ -1,0 +1,6 @@
+compiler
+out*
+examples/
+support_library.o
+stdin2array
+.vscode/launch.json

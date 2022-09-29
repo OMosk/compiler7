@@ -1,0 +1,13 @@
+#load "helpers.c7"
+
+func do_thing(x: i64|string) {
+  case x {
+    123 -> println_integer(x)
+    string -> print_string(x)
+  }
+}
+
+func main() {
+  do_thing(123)
+  0
+}

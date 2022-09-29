@@ -1,0 +1,16 @@
+struct Str {
+  data: rawptr
+  len: i64
+}
+
+func print_via_data_len(data: rawptr, len: i64) -> i64 {
+  #syscall(1, 1, data, len)
+}
+
+func print_via_struct(s: Str) -> i64 {
+  print_via_data_len(s.data, s.len)
+}
+
+func main() {
+  print_via_struct(%Str{data = "Hello world".data, len = 11})
+}

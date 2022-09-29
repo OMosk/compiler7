@@ -1,0 +1,4 @@
+func main() {
+  %{data: bool, len} = "Hello world"
+  len
+}

@@ -1,0 +1,7 @@
+#load "helpers.c7"
+
+func main() {
+  my_var: string = "Hello world\n"
+  print_string(my_var)
+  0
+}

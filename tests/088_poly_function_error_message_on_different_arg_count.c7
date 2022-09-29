@@ -1,0 +1,11 @@
+#load "helpers.c7"
+
+func get_first(x: {$T, string}) -> T {
+  x[0]
+}
+
+func main() {
+  result = get_first()
+  println_float(result)
+  0
+}

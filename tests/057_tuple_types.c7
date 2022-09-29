@@ -1,0 +1,10 @@
+#load "helpers.c7"
+
+func do_work(some_tuple: {i64, string}) -> i64 {
+  print_string(some_tuple[1]) 
+  some_tuple[0]
+}
+
+func main() {
+  do_work({1, "Hello world\n"})
+}

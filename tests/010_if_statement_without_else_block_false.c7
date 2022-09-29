@@ -1,0 +1,6 @@
+func main() {
+  if 0.(bool) {
+    #syscall(1, 1, "Hello world".data, 11)
+  }
+  0
+}

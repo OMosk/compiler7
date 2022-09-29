@@ -1,0 +1,15 @@
+#load "helpers.c7"
+
+func a1(fn: func() -> void) -> void {
+  fn();
+}
+
+func main() {
+  fn = func () -> void {
+    backtrace = c7_backtrace_string()
+    print_string(backtrace);
+  }
+
+  a1(fn)
+  0
+}

@@ -1,0 +1,30 @@
+func integer_to_string(n: i64) -> string #c_call #support_library
+func double_to_string(f: f64) -> string #c_call #support_library
+func c7_backtrace_string() -> string #c_call #support_library
+
+func println_integer(n: i64) -> i64 {
+  s = integer_to_string(n)
+  #syscall(1, 1, s.data, s.len)
+
+  print_string("\n")
+  0
+}
+
+func print_string(s: string) -> i64 {
+  #syscall(1, 1, s.data, s.len)
+}
+
+
+func println_float(f: f64) -> void {
+  s = double_to_string(f)
+  #syscall(1, 1, s.data, s.len)
+  #syscall(1, 1, "\n".data, 1)
+}
+
+func println_bool(b: bool) -> void {
+  if b {
+    print_string("true\n")
+  } else {
+    print_string("false\n")
+  }
+}

@@ -1,0 +1,12 @@
+func get_number() {
+  123
+}
+
+func main() {
+  n = get_number()
+  func() {
+    func() {
+      n
+    }()
+  }()
+}

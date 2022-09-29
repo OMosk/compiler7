@@ -1,0 +1,17 @@
+func main() {
+  list = [i64:]
+
+  first = if list {
+    10
+  } else {
+    20 // this branch
+  }
+
+  second = if !list {
+    1 // this branch
+  } else {
+    2
+  }
+
+  first + second // 21
+}

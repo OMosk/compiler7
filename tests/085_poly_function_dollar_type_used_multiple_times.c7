@@ -1,0 +1,10 @@
+#load "helpers.c7"
+
+func plus(x: $T, y: $T) -> T {
+  y
+}
+
+func main() {
+  println_float(plus(8.0, true))
+  0
+}

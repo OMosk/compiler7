@@ -1,0 +1,22 @@
+#load "helpers.c7"
+
+func println(thing: i64|string) -> void {
+  case thing {
+    n: i64 -> println_integer(n)
+    s: string -> print_string(s)
+  }
+}
+
+func get_something(a: bool) -> i64|string {
+  if a {
+    123
+  } else {
+    "123_but_string"
+  }
+}
+
+func main() {
+  println(get_something(true))
+  println(get_something(false))
+  0
+}

@@ -1,0 +1,11 @@
+-xc++
+-nodefaultlibs
+-fno-rtti
+-fno-exceptions
+-g
+-O0
+-Wall
+-Wextra
+-pthread
+-Wno-unused-parameter
+-Werror=switch

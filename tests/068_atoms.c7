@@ -1,0 +1,16 @@
+#load "helpers.c7"
+
+func do_thing(v ::my_atom|:my_other_atom) -> string {
+  case v {
+    :my_atom -> print_string(":my_atom\n")
+    :my_other_atom -> print_string(":my_other_atom\n")
+  }
+  ""
+}
+
+func main() {
+  a = :my_atom
+  do_thing(:my_atom)
+  do_thing(:my_other_atom)
+  0
+}

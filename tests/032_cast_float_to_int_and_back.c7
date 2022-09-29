@@ -1,0 +1,7 @@
+#load "helpers.c7"
+
+func main() {
+  println_integer(1.7.(i64))
+  println_float(2.(f64))
+  0
+}

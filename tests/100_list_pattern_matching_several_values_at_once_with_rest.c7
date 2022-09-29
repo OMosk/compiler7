@@ -1,0 +1,6 @@
+func main() {
+  list = [1, 2, 3, 4]
+  [first, second, third | rest] = list
+  [fourth] = rest
+  fourth
+}

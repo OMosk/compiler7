@@ -1,0 +1,28 @@
+#load "helpers.c7"
+
+// print and return
+func g(msg: string, value: bool) -> bool {
+  print_string(msg)
+  value
+}
+
+func main() {
+  a = g("0:Should\n", false) && g("0:Should not\n", true)
+  println_bool(a)
+  a = g("1:Should\n", true) && g("1:Should\n", false)
+  println_bool(a)
+  a = g("2:Should\n", true) && g("2:Should\n", true)
+  println_bool(a)
+
+
+  a = g("3:Should\n", false) || g("3:Should\n", false)
+  println_bool(a)
+  a = g("4:Should\n", false) || g("4:Should\n", true)
+  println_bool(a)
+  a = g("5:Should\n", true) || g("5:Should not\n", false)
+  println_bool(a)
+  a = g("6:Should\n", true) || g("6:Should not\n", true)
+  println_bool(a)
+
+  0
+}

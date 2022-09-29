@@ -1,0 +1,11 @@
+#load "helpers.c7"
+
+func main() {
+  a = "It is a string\n"
+  print_string(a)
+
+  a = 3.14
+  println_float(a)
+
+  0
+}

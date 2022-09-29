@@ -1,0 +1,14 @@
+#load "helpers.c7"
+
+func main() {
+  print_string("Hello " + "world\n")
+  println_bool("Hello " + "world\n" == "Hello world\n")
+  println_bool("One" != "Two")
+  println_bool("2" != "2")
+  println_bool("2" < "2")
+  println_bool("2" <= "2")
+  println_bool("2" > "2")
+  println_bool("2" >= "2")
+  println_bool("3" >= "2")
+  0
+}

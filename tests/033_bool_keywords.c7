@@ -1,0 +1,15 @@
+#load "helpers.c7"
+
+func main() {
+  if true {
+    print_string("true branch was taken as it should\n")
+  }
+
+  if false {
+    0
+  } else {
+    print_string("false branch was taken as it should\n")
+  }
+
+  0
+}

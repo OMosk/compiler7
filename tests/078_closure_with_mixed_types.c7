@@ -1,0 +1,14 @@
+#load "helpers.c7"
+
+func get_print_function(i: i64, s: string) {
+  func () -> void {
+    println_integer(i)
+    print_string(s)
+  }
+}
+
+func main() {
+  print_function = get_print_function(123, "Hello world\n")
+  print_function()
+  0
+}

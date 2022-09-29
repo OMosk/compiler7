@@ -1,0 +1,14 @@
+#load "helpers.c7"
+
+func apply(fn : func($Arg) -> $Ret, arg: Arg) -> Ret {
+  fn(arg)
+}
+
+func main() {
+  increment = func(n: i64) {
+    n + 1
+  }
+  result = apply(increment, 100)
+  println_integer(result)
+  0
+}

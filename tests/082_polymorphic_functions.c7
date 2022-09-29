@@ -1,0 +1,11 @@
+#load "helpers.c7"
+
+func plus_one(x: $T) -> T {
+  x + 1.(T)
+}
+
+func main() {
+  println_integer(plus_one(7))
+  println_float(plus_one(8.0))
+  0
+}

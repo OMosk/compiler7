@@ -1,0 +1,11 @@
+func double_to_string(f: f64) -> string #c_call #support_library
+
+func print_float(f: f64) -> void {
+  s = double_to_string(f)
+  #syscall(1, 1, s.data, s.len)
+}
+
+func main() {
+  print_float(0.011719)
+  0
+}

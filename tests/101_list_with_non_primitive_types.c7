@@ -1,0 +1,9 @@
+#load "helpers.c7"
+
+func main() {
+  list = ["Hello\n", "world\n"]
+  [first, second] = list
+  print_string(first)
+  print_string(second)
+  0
+}

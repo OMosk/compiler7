@@ -1,0 +1,10 @@
+func get_increment_function(increment_by: i64) {
+  func (value: i64) -> i64 {
+    value + increment_by
+  }
+}
+
+func main() {
+  increment_function = get_increment_function(3)
+  increment_function(1)
+}

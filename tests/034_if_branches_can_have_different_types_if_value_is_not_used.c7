@@ -1,0 +1,9 @@
+#load "helpers.c7"
+
+func main() {
+  if true {
+    print_string("It works\n")
+  } else {
+  }
+  0
+}

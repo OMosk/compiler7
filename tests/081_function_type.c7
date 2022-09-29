@@ -1,0 +1,10 @@
+func get_function_that_returns_number() -> (func(i64) -> i64) {
+  func(value: i64) -> i64 {
+    value
+  }
+}
+
+func main() {
+  fn = get_function_that_returns_number()
+  fn(124)
+}

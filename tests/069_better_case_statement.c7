@@ -1,0 +1,14 @@
+#load "helpers.c7"
+
+func do_thing(x: i64|string) {
+  case x {
+    i64 -> println_integer(x)
+    string -> print_string(x)
+  }
+}
+
+func main() {
+  do_thing(123)
+  do_thing("456_but_string\n")
+  0
+}

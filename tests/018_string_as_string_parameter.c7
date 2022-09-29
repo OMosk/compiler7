@@ -1,0 +1,8 @@
+func print_via_data_len(data: string, len: i64) -> i64 {
+  #syscall(1, 1, data.data, len)
+}
+
+
+func main() {
+  print_via_data_len(string, i64)
+}

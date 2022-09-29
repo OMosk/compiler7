@@ -1,0 +1,8 @@
+func head(list: [i64]) -> i64 {
+  [first] = list
+  first
+}
+
+func main() {
+  head([3, 4])
+}

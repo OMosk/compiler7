@@ -1,0 +1,9 @@
+func main() {
+  get_number = func() {
+    123
+  }
+
+  tuple_with_function = {get_number}
+
+  tuple_with_function[0]()
+}

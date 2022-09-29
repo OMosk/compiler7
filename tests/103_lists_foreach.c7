@@ -1,0 +1,33 @@
+#load "helpers.c7"
+
+func foreach(list: [$T], fn: func(T) -> void) -> void {
+  if list {
+    [head|rest] = list
+    fn(head)
+    foreach(rest, fn)
+  }
+}
+
+func main() {
+  list = ["List", "of", "strings"]
+
+  // [first|list] = list
+  // [second|list] = list
+  // [third|list] = list
+
+  // print_string(first)
+  // print_string("\n")
+
+  // print_string(second)
+  // print_string("\n")
+
+  // print_string(third)
+  // print_string("\n")
+
+  foreach(list, func(el: string) -> void {
+    print_string(el)
+    print_string("\n")
+  })
+
+  0
+}

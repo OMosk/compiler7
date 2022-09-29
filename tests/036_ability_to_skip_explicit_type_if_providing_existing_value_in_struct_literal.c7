@@ -1,0 +1,8 @@
+#load "helpers.c7"
+
+func main() {
+  msg = "Hello world\n"
+  msg = %{msg | len = 4}
+  print_string(msg)
+  0
+}

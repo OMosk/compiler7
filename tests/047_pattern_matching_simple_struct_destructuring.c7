@@ -1,0 +1,4 @@
+func main() {
+  %{data, len} = "Hello world"
+  len
+}

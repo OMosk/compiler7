@@ -1,0 +1,13 @@
+#load "helpers.c7"
+
+func get_print_function(value: string) {
+  func () -> void {
+    print_string(value)
+  }
+}
+
+func main() {
+  print_function = get_print_function("Hello world\n")
+  print_function()
+  0
+}

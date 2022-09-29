@@ -1,0 +1,4 @@
+func main() {
+  %{some_not_existing} = "Hello world"
+  len
+}

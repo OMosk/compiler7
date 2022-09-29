@@ -1,0 +1,35 @@
+#load "helpers.c7"
+
+struct MyStruct {
+  x: i64|string
+}
+
+func print_stuff(x: i64|string) -> void {
+  case x {
+    i64    -> println_integer(x)
+    string -> print_string(x)
+  }
+}
+
+func main() {
+  // ---------------------
+  a : i64|string = "Hello\n"
+  print_stuff(a)
+
+  // ---------------------
+  a = "Hello2\n".(i64|string)
+  print_stuff(a)
+
+  // ---------------------
+  a = {123: i64|string}
+  print_stuff(a[0])
+
+  // ---------------------
+  a = %MyStruct{x = 124}
+  print_stuff(a.x)
+
+  // ---------------------
+  print_stuff(125)
+
+  0
+}

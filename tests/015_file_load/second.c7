@@ -1,0 +1,4 @@
+func print_via_data_len(data: rawptr, len: i64) -> i64 {
+  #syscall(1, 1, data, len)
+}
+

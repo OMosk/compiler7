@@ -1,0 +1,8 @@
+func main() {
+  list = [1, 2, 3]
+  list = [100 | list]
+
+  [_ | list] = list
+  [second] = list
+  second
+}

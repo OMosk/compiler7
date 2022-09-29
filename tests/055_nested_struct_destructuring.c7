@@ -1,0 +1,11 @@
+struct My_Struct {
+  s: string
+  counter: i64
+}
+
+func main() {
+  my_struct = %My_Struct{s = "Hello world", counter = 7}
+
+  %{s = %{data = my_struct_string_data, len = my_struct_string_len}} = my_struct
+  my_struct_string_len
+}

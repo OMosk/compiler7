@@ -1,0 +1,6 @@
+func integer_to_string(n: i64) -> string #c_call #support_library
+
+func main() {
+  s = integer_to_string(123456)
+  #syscall(1, 1, s.data, s.len)
+}

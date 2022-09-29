@@ -1,0 +1,23 @@
+#load "helpers.c7"
+
+struct MyStruct {
+  data: i64|string
+}
+
+// Hack to fill a struct field
+func get_my_struct(x: i64|string) -> MyStruct {
+  %MyStruct{data = x}
+}
+
+func do_thing(x: MyStruct) {
+  case x.data {
+    i64 -> println_integer(x)
+    string -> print_string(x)
+  }
+}
+
+func main() {
+  my_struct = get_my_struct(123)
+  do_thing(my_struct)
+  0
+}

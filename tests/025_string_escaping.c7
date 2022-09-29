@@ -1,0 +1,4 @@
+func main() {
+  message = "H\te\tl\tl\to\nWorld"
+  #syscall(1, 1, message.data, message.len)
+}

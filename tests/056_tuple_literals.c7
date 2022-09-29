@@ -1,0 +1,7 @@
+#load "helpers.c7"
+
+func main() {
+  my_tuple = {1, "Hello world\n"}
+  print_string(my_tuple[1]) 
+  my_tuple[0]
+}

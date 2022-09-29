@@ -1,0 +1,32 @@
+#load "helpers.c7"
+
+func main() {
+  println_float(1.0 + 1.0)
+  println_float(1.0 - 1.0)
+  println_float(1.0 * 0.5)
+  println_float(4.0 / 2.0)
+
+  println_integer((1.0 < 0.0).(i64))
+  println_integer((1.0 < 1.0).(i64))
+  println_integer((1.0 < 2.0).(i64))
+
+  println_integer((1.0 <= 0.0).(i64))
+  println_integer((1.0 <= 1.0).(i64))
+  println_integer((1.0 <= 2.0).(i64))
+
+  println_integer((1.0 > 0.0).(i64))
+  println_integer((1.0 > 1.0).(i64))
+  println_integer((1.0 > 2.0).(i64))
+
+  println_integer((1.0 >= 0.0).(i64))
+  println_integer((1.0 >= 1.0).(i64))
+  println_integer((1.0 >= 2.0).(i64))
+
+  println_integer((1.0 == 0.0).(i64))
+  println_integer((1.0 == 1.0).(i64))
+  println_integer((1.0 == 2.0).(i64))
+
+  println_integer((1.0 != 0.0).(i64))
+  println_integer((1.0 != 1.0).(i64))
+  println_integer((1.0 != 2.0).(i64))
+}
